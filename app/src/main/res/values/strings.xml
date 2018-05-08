@@ -14,4 +14,17 @@
     <string name="invalid_email">Email is invalid!</string>
     <string name="invalid_password">Password must be atleast 8 characters.</string>
     <string name="invalid_confirm_password">Passwords do not match!</string>
+    <string name="navigation_home">Home</string>
+    <string name="navigation_adopt">Adopt</string>
+    <string name="navigation_buy">Buy</string>
+    <string name="navigation_account">Me</string>
+    <string name="navigation_services">Services</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_search">search</string>
+    <string name="header_welcome">Welcome to PAWS IT!</string>
+    <string name="message_welcome">This is a prototype of our app developed as part of the requirements in our Mobile Computing class. \n\n PAWS IT is an online e-commerce platform dedicated solely to anything that is pet related. \n\n We aim to connect pet breeders, shelters, and services with future and existing pet owners.</string>
+    <string name="header_members">Members</string>
+    <string name="header_team">The Team</string>
 </resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_banner"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        fresco:actualImageScaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/header_welcome"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        fresco:layout_constraintEnd_toEndOf="parent"
+        fresco:layout_constraintStart_toStartOf="parent"
+        fresco:layout_constraintTop_toBottomOf="@+id/image_banner" />
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/message_welcome"
+        android:textAlignment="center"
+        fresco:layout_constraintEnd_toEndOf="parent"
+        fresco:layout_constraintStart_toStartOf="parent"
+        fresco:layout_constraintTop_toBottomOf="@+id/text_welcome" />
+
+    <TextView
+        android:id="@+id/text_welcome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/header_team"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextDark"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        fresco:layout_constraintEnd_toEndOf="parent"
+        fresco:layout_constraintStart_toStartOf="parent"
+        fresco:layout_constraintTop_toBottomOf="@+id/text_message" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_team_alden"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:layout_constraintEnd_toStartOf="@+id/image_team_alexa"
+        fresco:layout_constraintTop_toBottomOf="@+id/text_welcome2"
+        fresco:roundAsCircle="true" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_team_alexa"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:layout_constraintEnd_toEndOf="parent"
+        fresco:layout_constraintStart_toStartOf="parent"
+        fresco:layout_constraintTop_toBottomOf="@+id/text_welcome2"
+        fresco:roundAsCircle="true" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_team_kyle"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:layout_constraintStart_toEndOf="@+id/image_team_alexa"
+        fresco:layout_constraintTop_toBottomOf="@+id/text_welcome2"
+        fresco:roundAsCircle="true" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_team_cole"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:layout_constraintEnd_toStartOf="@+id/image_team_marvin"
+        fresco:layout_constraintTop_toBottomOf="@+id/text_alden"
+        fresco:roundAsCircle="true" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_team_marvin"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:layout_constraintEnd_toEndOf="parent"
+        fresco:layout_constraintHorizontal_bias="0.501"
+        fresco:layout_constraintStart_toStartOf="parent"
+        fresco:layout_constraintTop_toBottomOf="@+id/text_alexa"
+        fresco:roundAsCircle="true" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_team_mc"
+        android:layout_width="75dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:layout_constraintStart_toEndOf="@+id/image_team_marvin"
+        fresco:layout_constraintTop_toBottomOf="@+id/text_kyle"
+        fresco:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/text_alden"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Alden Braddock"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextDark"
+        android:textSize="8sp"
+        fresco:layout_constraintEnd_toEndOf="@+id/image_team_alden"
+        fresco:layout_constraintHorizontal_bias="1.0"
+        fresco:layout_constraintStart_toStartOf="@+id/image_team_alden"
+        fresco:layout_constraintTop_toBottomOf="@+id/image_team_alden" />
+
+    <TextView
+        android:id="@+id/text_alexa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Alexa Custodio"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextDark"
+        android:textSize="8sp"
+        fresco:layout_constraintEnd_toEndOf="@+id/image_team_alexa"
+        fresco:layout_constraintStart_toStartOf="@+id/image_team_alexa"
+        fresco:layout_constraintTop_toBottomOf="@+id/image_team_alexa" />
+
+    <TextView
+        android:id="@+id/text_kyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Kyle Jamolangue"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextDark"
+        android:textSize="8sp"
+        fresco:layout_constraintEnd_toEndOf="@+id/image_team_kyle"
+        fresco:layout_constraintStart_toStartOf="@+id/image_team_kyle"
+        fresco:layout_constraintTop_toBottomOf="@+id/image_team_kyle" />
+
+    <TextView
+        android:id="@+id/text_cole"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Cole Sandoval"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextDark"
+        android:textSize="8sp"
+        fresco:layout_constraintEnd_toEndOf="@+id/image_team_cole"
+        fresco:layout_constraintStart_toStartOf="@+id/image_team_cole"
+        fresco:layout_constraintTop_toBottomOf="@+id/image_team_cole" />
+
+</android.support.constraint.ConstraintLayout>

@@ -36,31 +36,33 @@ public class SplashActivity extends AppCompatActivity {
     {
         super.onStart();
 
-        mAuth.signOut();
-
-        //CHECK IF THERE IS A SIGNED-IN USER
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        //SIGNED IN USER
-        if(currentUser!=null)
+        //NEXT ACTIVITY
+        new Handler().postDelayed(new Runnable()
         {
-            Toast.makeText(this, "A USER IS SIGNED IN", Toast.LENGTH_SHORT).show();
-        }
-
-        //NO SIGNED IN USER
-        else
-        {
-            //NEXT ACTIVITY
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run()
+            @Override
+            public void run()
+            {
+                //CHECK IF THERE IS A SIGNED-IN USER
+                FirebaseUser currentUser = mAuth.getCurrentUser();
+                //SIGNED IN USER
+                if(currentUser!=null)
                 {
+                    Intent intentMainActivity = new Intent(SplashActivity.this,MainActivity.class);
+                    startActivity(intentMainActivity);
+                    finish();
+                }
+
+                //NO SIGNED IN USER
+                else
+                {
+
                     Intent intentLoginActivity;
                     intentLoginActivity = new Intent(SplashActivity.this,LoginActivity.class);
 
                     startActivity(intentLoginActivity);
                     finish();
                 }
-            },SPLASH_DELAY);
-        }
+            }
+        },SPLASH_DELAY);
     }
 }
