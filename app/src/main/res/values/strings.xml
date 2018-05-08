@@ -27,4 +27,7 @@
     <string name="message_welcome">This is a prototype of our app developed as part of the requirements in our Mobile Computing class. \n\n PAWS IT is an online e-commerce platform dedicated solely to anything that is pet related. \n\n We aim to connect pet breeders, shelters, and services with future and existing pet owners.</string>
     <string name="header_members">Members</string>
     <string name="header_team">The Team</string>
+    <string name="message_construction">This feature is under construction.</string>
+    <string name="button_subscribe">Subscribe</string>
+    <string name="button_logout">Logout</string>
 </resources>

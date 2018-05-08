@@ -35,6 +35,38 @@ public class MainActivity extends AppCompatActivity {
                     fragmentTransaction.replace(frameLayoutFragmentContainer.getId(),new HomeFragment(),"HOME");
                     fragmentTransaction.commit();
                 }
+
+                else if(item.getItemId()==R.id.item_buy)
+                {
+                    FragmentManager fragmentManager = getFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(frameLayoutFragmentContainer.getId(),new UnderConstructionFragment(),"UNDERCONST");
+                    fragmentTransaction.commit();
+                }
+
+                else if(item.getItemId()==R.id.item_adopt)
+                {
+                    FragmentManager fragmentManager = getFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(frameLayoutFragmentContainer.getId(),new UnderConstructionFragment(),"UNDERCONST");
+                    fragmentTransaction.commit();
+                }
+
+                else if(item.getItemId()==R.id.item_services)
+                {
+                    FragmentManager fragmentManager = getFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(frameLayoutFragmentContainer.getId(),new UnderConstructionFragment(),"UNDERCONST");
+                    fragmentTransaction.commit();
+                }
+
+                else if(item.getItemId()==R.id.item_account)
+                {
+                    FragmentManager fragmentManager = getFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(frameLayoutFragmentContainer.getId(),new AccountFragment(),"ACCOUNT");
+                    fragmentTransaction.commit();
+                }
                 return true;
             }
         });
