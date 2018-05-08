@@ -72,9 +72,9 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void register()
     {
-        String email = textInputEditTextEmail.getText().toString();
-        String password = textInputEditTextPassword.getText().toString();
-        String confirmPassword = textInputEditTextConfirmPassword.getText().toString();
+        String email = textInputEditTextEmail.getText().toString().trim();
+        String password = textInputEditTextPassword.getText().toString().trim();
+        String confirmPassword = textInputEditTextConfirmPassword.getText().toString().trim();
 
         textInputLayoutEmail.setErrorEnabled(false);
         textInputLayoutPassword.setErrorEnabled(false);
@@ -136,7 +136,6 @@ public class RegisterActivity extends AppCompatActivity {
                 if (task.isSuccessful())
                 {
                     Log.d(TAG, "createUserWithEmail:success");
-                    Toast.makeText(RegisterActivity.this, "ACCOUNT REGISTRATION SUCCESSFUL", Toast.LENGTH_SHORT).show();
 
                     //BRING USER TO MAIN ACTIVITY
                     Intent intentMain = new Intent(RegisterActivity.this,MainActivity.class);
@@ -147,6 +146,7 @@ public class RegisterActivity extends AppCompatActivity {
                 else
                 {
                     Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                    Toast.makeText(RegisterActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
